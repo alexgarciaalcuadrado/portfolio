@@ -9,7 +9,7 @@ const Projects = () => {
         PROJECTS
       </h1>
       <p className=" tracking-[0.5em] text-center text-transparent font-light pb-5  bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500  text-1xl ">
-        CHECKOUT WHAT I'VE DONE
+        CHECKOUT WHAT I&apos;VE DONE
       </p>
       <div className=" container mx-auto 2xl  ">
         <div className="flex flex-col mt-7">
@@ -30,7 +30,7 @@ const Projects = () => {
               <div className="p-3">
                 <p className="text-white font-semibold text-[30px]">Mediline</p>
                 <p className="text-gray-500 text-[15px]">
-                Video Call platform designed with React.js and React Native, using the best UX design practices and Agora's video conference service.
+                Video Call platform designed with React.js and React Native, using the best UX design practices and Agora&apos;s video conference service.
                 </p>
               </div>
             </div>
