@@ -1,22 +1,17 @@
 export const Social_Icons = [
   {
-    link: "https://github.com/ibrahimmemonn",
+    link: "https://github.com/alexgarciaalcuadrado",
     image: "/Github.svg",
     alt: "Github",
   },
   {
-    link: "https://www.instagram.com/ibii.memon/?hl=en",
-    image: "/Instagram.svg",
-    alt: "Instagram",
-  },
-  {
-    link: "https://www.linkedin.com/in/ibrahimmemonn/",
+    link: "https://www.linkedin.com/in/alexander-garcia-409918201/",
     image: "/LinkedIn.svg",
     alt: "LinkedIn",
   },
   {
-    link: "https://twitter.com/Ibrahimmemonnn",
-    image: "/Twitter.svg",
-    alt: "Twitter",
+    link: "mailto:alexgarciaalcuadrado@gmail.com",
+    image: "/Email.png",
+    alt: "Email",
   },
 ];

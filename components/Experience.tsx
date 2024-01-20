@@ -12,25 +12,19 @@ const Experience = () => {
       <div className=" container mx-auto 2xl ">
         <div className="flex  flex-row justify-between pt-5">
           <p className="text-gray-300 ">
-            <span className="font-semibold">WebHR /</span> Software Engineer
+            <a className="font-semibold cursor-pointer" href="https://sisargentina.com/"> SIS Argentina /</a> Front End Developer
           </p>
-          <p className="text-gray-300">MAY 2022 - PRESENT, HYDERABAD</p>
+          <p className="text-gray-300">AUGUST 2022 - PRESENT, REMOTE</p>
         </div>
         <p className="text-gray-300 pt-5">
-          Currently, I am working on WebHR Mobile Application, WebHR is a Cloud
-          based Social HR Software for SMEs by Verge Systems Inc. WebHR is
-          currently used in over 160 countries world wide by thousands of
-          organizations to manage HR, As a React.js developer with 1.5 year of
-          experience, I have a strong foundation in creating dynamic and
-          responsive mobile and web applications.
+          Currently, I am working as the lead Front End developer at SISArgentina, which is a compnay that offers hosting and development of Web and Apps for all plataforms. 
+          Specialized in React.js with 3 years of experience, I have a strong foundation in creating dynamic and
+          responsive mobile and web applications. Using Jira and UI/UIX design tools like AdobeXD and Miro, I develop from scrach functional and beautiful software products with the utmost care for detail.
           <br />
           <br />
-          My experience with React Native has allowed me to develop
-          cross-platform mobile applications that run seamlessly on both iOS and
-          Android platforms. Additionally, my proficiency in React.js has
-          equipped me with the skills to create fast, scalable, and dynamic web
+          With my vast knolewdge of Typescritp and Javascript libraries I create fast, scalable, and dynamic web
           pages with excellent user experiences. I have a deep understanding of
-          component-based architecture and state management, and I am
+          component-based architecture and state management (susch as Redux and React Context), and I am
           well-versed in the latest web development trends and technologies.
         </p>
         <div className="flex-col flex sm:flex-row ">
