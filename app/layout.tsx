@@ -12,7 +12,10 @@ export const metadata: Metadata = {
   ),
   title: "Alexander Portfolio",
   description: "Developer Portfolio By Alexander Garcia",
-  keywords: ["Developer", "Portfolio", "Developer Portflio", "Alexander Garcia"],
+  keywords: ["Developer", "Portfolio", "Developer Portfolio", "Alexander Garcia"],
+  icons: {
+    icon: "/favicon.ico",
+  },
   openGraph: {
     title: "Alexander Garcia",
     description: "Front End Developer",

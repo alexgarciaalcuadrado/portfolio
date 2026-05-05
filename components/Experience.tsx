@@ -1,49 +1,42 @@
-import React from "react";
+import Link from "next/link";
+import { experiences } from "@/lib/data";
+import SectionHeader from "@/components/ui/SectionHeader";
+import SkillBadge from "@/components/ui/SkillBadge";
 
-const Experience = () => {
-  return (
-    <section id="experience">
-      <h1 className="text-white font-semibold text-center text-6xl   pt-[35px]">
-        EXPERIENCE
-      </h1>
-      <p className=" tracking-[0.5em] text-center text-transparent font-light pb-5  bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500  text-1xl ">
-        EXPLORE NOW
-      </p>
-      <div className=" container mx-auto 2xl ">
-        <div className="flex  flex-row justify-between pt-5">
-          <p className="text-gray-300 ">
-            <a className="font-semibold cursor-pointer" href="https://sisargentina.com/"> SIS Argentina /</a> Front End Developer
-          </p>
-          <p className="text-gray-300">AUGUST 2022 - PRESENT, REMOTE</p>
-        </div>
-        <p className="text-gray-300 pt-5">
-          Currently, I am working as the lead Front End developer at SISArgentina, which is a compnay that offers hosting and development of Web and Apps for all plataforms. 
-          Specialized in React.js with 3 years of experience, I have a strong foundation in creating dynamic and
-          responsive mobile and web applications. Using Jira and UI/UIX design tools like AdobeXD and Miro, I develop from scrach functional and beautiful software products with the utmost care for detail.
-          <br />
-          <br />
-          With my vast knolewdge of Typescritp and Javascript libraries I create fast, scalable, and dynamic web
-          pages with excellent user experiences. I have a deep understanding of
-          component-based architecture and state management (susch as Redux and React Context), and I am
-          well-versed in the latest web development trends and technologies.
-        </p>
-        <div className="flex-col flex sm:flex-row ">
-          <div className="bg-transparent  mt-5 mr-2 cursor-pointer  rounded-3xl  text-white py-2 px-5  border border-[#2E2E2E] w-max">
-            React Native
+const Experience = () => (
+  <section id="experience">
+    <SectionHeader title="EXPERIENCE" />
+    <div className="container mx-auto 2xl">
+      {experiences.map((exp, i) => (
+        <div key={`${exp.company}-${exp.period}`} className={i === 0 ? "pt-5" : "pt-10"}>
+          <div className="flex flex-row justify-between">
+            <p className="text-gray-300">
+              {exp.companyUrl ? (
+                <Link
+                  className="font-semibold"
+                  href={exp.companyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {exp.company} /
+                </Link>
+              ) : (
+                <span className="font-semibold">{exp.company} /</span>
+              )}{" "}
+              {exp.role}
+            </p>
+            <p className="text-gray-300">{exp.period}</p>
           </div>
-          <div className="bg-transparent  mt-5  mr-2 cursor-pointer  rounded-3xl  text-white py-2 px-5  border border-[#2E2E2E] w-max">
-            React
-          </div>
-          <div className="bg-transparent  mt-5  mr-2 cursor-pointer  rounded-3xl  text-white py-2 px-5  border border-[#2E2E2E] w-max">
-            JavaScript
-          </div>
-          <div className="bg-transparent  mt-5 cursor-pointer  rounded-3xl  text-white py-2 px-5  border border-[#2E2E2E] w-max">
-            Typescript
+          <p className="text-gray-300 pt-5">{exp.description}</p>
+          <div className={`flex-col flex sm:flex-row flex-wrap ${i === experiences.length - 1 ? "pb-10" : ""}`}>
+            {exp.tags.map((tag) => (
+              <SkillBadge key={tag} label={tag} />
+            ))}
           </div>
         </div>
-      </div>
-    </section>
-  );
-};
+      ))}
+    </div>
+  </section>
+);
 
 export default Experience;
